@@ -139,3 +139,7 @@
 #divider {
 	margin-bottom: 100px;
 }
+
+.italic {
+  font-style: italic;
+}

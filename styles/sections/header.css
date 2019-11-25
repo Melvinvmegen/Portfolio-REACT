@@ -27,36 +27,34 @@ background-color: #fff;
 
 .main-header-top {
 	height: 100px;
-	position: relative;
 	transition: height .5s;
 	border-bottom: 1px solid #eee;
   margin: 0 auto;
   max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-header-left {
     margin-left: 10px;
     margin-top: 2px;
     max-height: 100%;
-    overflow-y: hidden;
-    position: absolute;
     text-align: center;
     transition: height .5s;
 }
 
 .main-header-center {
 	display: flex;
+	align-items: center;
 	height: 100%;
-	margin: 0 auto;
 	text-align: center;
 	transition: all .5s;
-	width: 100%;
-	position: relative;
+  flex-grow: 1;
 }
 
 .main-header-right {
 	margin-right: 40px;
-	position: absolute;
 	right: 0;
 	top: 0;
 	transition: all .5s;
@@ -174,10 +172,10 @@ background-color: #fff;
 }
 
 .nav-menu li a {
-	padding: 0px 40px;
+	padding: 0 20px;
 	font-size: 13px;
 	font-weight: bold;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .sticky-header-right .nav-menu li a {

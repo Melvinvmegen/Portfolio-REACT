@@ -59,7 +59,8 @@ h2 {
 h3 {
 	color: #23527c;
 	font-size: 18px;
-	text-decoration: none;
+  text-decoration: none;
+  line-height: 2.5;
 }
 
 p {
