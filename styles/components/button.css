@@ -32,122 +32,119 @@
 	cursor: pointer;
 }
 
-.portfolio-experiment a {
-  color: white;
-  padding: 0.7em 0.84em;
+.btn-project a {
+  color: black;
+  padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
   position: relative;
-  font-size: 1.5em;
   cursor: pointer;
   letter-spacing: 0.07em;
 }
 
-.portfolio-experiment a .text {
-  font-family: proxima-nova, monospace;
+.btn-project a .text {
   transform: translate3d(0, 0.7em, 0);
   display: block;
-  transition: transform 0.4s cubic-bezier(.2, 0, 0, 1) 0.4s;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-.portfolio-experiment a:after {
+.btn-project a:after {
   position: absolute;
   content: '';
   bottom: -3px;
-  left: 0.84em;
-  right: 0.84em;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
   height: 3px;
-  background: #f26522;
-  transition:
-  transform 0.8s cubic-bezier(1, 0, .37, 1) 0.2s,
-  right 0.2s cubic-bezier(.04, .48, 0, 1) 0.6s,
-  left 0.4s cubic-bezier(.04, .48, 0, 1) 0.6s;
+  background: #ffee00;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 
-.portfolio-experiment .line {
+.btn-project .line {
   position: absolute;
-  background: #f26522;
+  background: #ffee00;
 }
 
-.portfolio-experiment .line .-right, .-left {
+.btn-project .line.-right,
+.btn-project .line.-left {
   width: 3px;
   bottom: -3px;
   top: -3px;
   transform: scale3d(1, 0, 1);
 }
 
-.portfolio-experiment .line .-top, .-bottom {
+.btn-project .line.-top,
+.btn-project .line.-bottom {
   height: 3px;
   left: -3px;
   right: -3px;
   transform: scale3d(0, 1, 1);
 }
 
-.portfolio-experiment .line .-right {
+.btn-project .line.-right {
   right: -3px;
-  transition: transform 0.1s cubic-bezier(1, 0, .65, 1.01) 0.23s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
 
-.portfolio-experiment .line .-top {
+.btn-project .line.-top {
   top: -3px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
 
-.portfolio-experiment .line .-left {
+.btn-project .line.-left {
   left: -3px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
 
-.portfolio-experiment .line .-bottom {
+.btn-project .line.-bottom {
   bottom: -3px;
-  transition: transform 0.3s cubic-bezier(1, 0, .65, 1.01);
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
 
-.portfolio-experiment a:hover, a:active .text {
+.btn-project a:hover .text,
+.btn-project a:active .text {
   transform: translate3d(0, 0, 0);
-  transition: transform 0.6s cubic-bezier(.2, 0, 0, 1) 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-.portfolio-experiment a:hover, a:active:after {
+.btn-project a:hover:after,
+.btn-project a:active:after {
   transform: scale3d(0, 1, 1);
   right: -3px;
   left: -3px;
   transform-origin: right;
-  transition:
-    transform 0.2s cubic-bezier(1, 0, .65, 1.01) 0.17s,
-    right 0.2s cubic-bezier(1, 0, .65, 1.01),
-    left 0s 0.3s;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
 
-.line {
+.btn-project a:hover .line,
+.btn-project a:active .line {
   transform: scale3d(1, 1, 1);
 }
 
-.portfolio-experiment .line .-right a:hover,
-a:active {
-  transition: transform 0.1s cubic-bezier(1, 0, .65, 1.01) 0.2s;
+.btn-project a:hover .line.-right,
+.btn-project a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
 
-.portfolio-experiment .line .-top a:hover,
-a:active {
+.btn-project a:hover .line.-top,
+.btn-project a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
 
-.portfolio-experiment .line .-left a:hover,
-a:active {
+.btn-project a:hover .line.-left,
+.btn-project a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
 
-.portfolio-experiment .line .-bottom a:hover,
-a:active {
-  transition: transform 0.5s cubic-bezier(0, .53, .29, 1) 0.56s;
+.btn-project a:hover .line.-bottom,
+.btn-project a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
