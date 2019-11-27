@@ -44,22 +44,6 @@
 	position: relative;
 }
 
-.ml4 {
-	position: relative;
-  	font-weight: 900;
-  	font-size: 4.5em;
-  	top: -60px;
-}
-
-.ml4 .letters {
-	position: absolute;
-	margin: auto;
-	left: 0;
-	top: 0.3em;
-	right: 0;
-	opacity: 0;
-}
-
 .section-main {
 	width: 80%;
 	max-width: 1200px;
