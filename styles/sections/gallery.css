@@ -42,7 +42,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: -320%;
+  top: -500%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
