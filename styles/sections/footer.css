@@ -83,6 +83,10 @@
 	text-decoration: none;
 }
 
+.icon:hover {
+  color: white;
+}
+
 .footer-newsletter {
 	width: 38%;
 	float: right;
