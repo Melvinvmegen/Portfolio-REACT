@@ -1,3 +1,7 @@
+particlesJS.load('particles-js', '../javascripts/assets/particles.json', function () {
+  console.log('callback - particles.js config loaded');
+});
+
 // Begin sticky bar
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
@@ -182,3 +186,5 @@ function isElementInViewport(el) {
   );
 }
 // End Scroll Animations
+
+

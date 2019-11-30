@@ -15,7 +15,7 @@ Tags: bootstrap
 @import url("components/sticky-header.css");
 @import url("components/polygons.css");
 @import url("components/typedjs.css");
-
+@import url("components/particlesjs.css");
 
 html {
  	-ms-text-size-adjust:100%;
