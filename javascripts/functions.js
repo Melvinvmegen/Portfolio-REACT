@@ -5,11 +5,30 @@ particlesJS.load('particles-js', '../javascripts/assets/particles.json', functio
 // Begin sticky bar
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+};
 
 function scrollFunction() {
+  'use strict';
+  const section = document.querySelectorAll(".section-anchor");
+  const sections = {};
+  let i = 0;
+
+  Array.prototype.forEach.call(section, function (e) {
+    sections[e.id] = e.offsetTop;
+  });
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("sticky-header").style.top = "0";
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        console.log(sections[i])
+        console.log('a[href=' + i + ']')
+        document.querySelector('.ref').setAttribute('class', 'ref');
+        document.querySelector('a[href=' + i + ']').setAttribute('class', 'ref');
+      }
+    }
   } else {
     document.getElementById("sticky-header").style.top = "-200px";
   }
@@ -133,24 +152,31 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("myslides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex -1].style.display = "block";
-  dots[slideIndex -1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 };
 // End Gallery
 
 // Begin Scroll Animations
 var scroll = window.requestAnimationFrame ||
-  function(callback){ window.setTimeout(callback, 1000/60)};
+  function (callback) {
+    window.setTimeout(callback, 1000 / 60)
+  };
 
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
 function loop() {
   elementsToShow.forEach(function (element) {
     if (isElementInViewport(element)) {
@@ -175,16 +201,12 @@ function isElementInViewport(el) {
   }
   var rect = el.getBoundingClientRect();
   return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
+    (rect.top <= 0 &&
+      rect.bottom >= 0) ||
     (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
     (rect.top >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
 // End Scroll Animations
-
-

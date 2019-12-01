@@ -12,7 +12,7 @@
 	padding: 0;
 }
 
-.section .section-anchor {
+.section-anchor {
 	position: absolute;
 	top: -100px;
 }
@@ -31,6 +31,7 @@
 
 .title-bold {
   font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 .home-face {
@@ -62,7 +63,8 @@
 .section-one {
 	width: 100%;
 	display:inline-block;
-	min-height: 80vh;
+  min-height: 90vh;
+  position: relative;
 }
 
 .section-wrapper {
@@ -114,13 +116,15 @@
 .section-two {
 	width: 100%;
 	display:inline-block;
-	min-height: 80vh;
+  min-height: 90vh;
+  position: relative;
 }
 
 .section-three {
 	width: 100%;
 	display:inline-block;
-	min-height: 80vh;
+  min-height: 90vh;
+  position: relative;
 }
 
 #divider {
@@ -132,7 +136,4 @@
 }
 .home-text {
   margin: 50px 0;
-}
-.home-btn {
-
 }

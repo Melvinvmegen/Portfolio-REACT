@@ -16,6 +16,7 @@ Tags: bootstrap
 @import url("components/polygons.css");
 @import url("components/typedjs.css");
 @import url("components/particlesjs.css");
+@import url("components/avatar.css");
 
 html {
  	-ms-text-size-adjust:100%;

@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 0,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,10 +47,10 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 213.1724154894355,
+      "distance": 150,
       "color": "#000000",
       "opacity": 0.4,
-      "width": 1.6397878114571962
+      "width": 1
     },
     "move": {
       "enable": true,
@@ -71,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "resize": true
