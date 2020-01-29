@@ -1,0 +1,24 @@
+#hire-me {
+  background: rgb(51, 122, 183);
+  border: 2px solid #fff;
+  color: #fff !important;
+}
+
+#hire-me:hover {
+  background: white;
+  border: 2px solid rgb(51, 122, 183);
+  color: rgb(51, 122, 183);
+}
+
+#sticky-hire-me {
+  background: transparent;
+  border: 2px solid rgb(51, 122, 183);
+  color: rgb(51, 122, 183);
+}
+
+#sticky-hire-me:hover {
+  background: rgb(51, 122, 183);
+  color: white !important;
+  border: 2px solid white;
+}
+
