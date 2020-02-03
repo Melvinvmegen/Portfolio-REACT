@@ -1,0 +1,29 @@
+.TagList {
+  position: relative;
+  list-style-type: none;
+  padding-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+
+.Tag {
+  min-height: 27px;
+  padding: 3.38px 13.5px;
+  font-size: 12px;
+  border-radius: 13.5px;
+  background-color: #f7f7f7;
+  margin: 1px;
+}
+
+.Tag span {
+  color: #484848;
+}
+
+@media (max-width: 768px) {
+  .TagList {
+    padding: 0;
+  }
+}
