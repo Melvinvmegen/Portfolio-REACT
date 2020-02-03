@@ -64,6 +64,10 @@
   top: 0;
 }
 
+.sticky-header-wrapper {
+  top: -500px;
+}
+
 .sticky-header-container {
   max-width: 1200px;
   margin: 0 auto;

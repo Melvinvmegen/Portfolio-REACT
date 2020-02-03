@@ -1,15 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../Logo/Logo"
 import Nav from "../Nav/Nav";
 import CTA from "../CTA/CTA";
 
 const StickyHeader = (props) => {
-  const [isSticky, setSticky] = useState(false);
-  const ref = useRef(null);
+  let [isSticky, setSticky] = useState(false);
+  let ref = 0;
 
   const handleScroll = () => {
-    console.log(ref.current.getBoundingClientRect().top)
-    setSticky(ref.current.getBoundingClientRect().top >= 0);
+    ref = window.pageYOffset
+    console.log(ref)
+      setSticky(ref >= 500)
   };
 
   useEffect(() => {
@@ -20,9 +21,9 @@ const StickyHeader = (props) => {
     };
   }, [])
 
-  return(
-    <div id={isSticky ? 'sticky-header' : ''} ref={ref}>
-      <div data-target={console.log(isSticky)} className="sticky-header-container">
+  return (
+    <div id={isSticky ? 'sticky-header' : ''} class="sticky-header-wrapper">
+      <div className="sticky-header-container">
         <Logo />
         <Nav />
         <CTA />

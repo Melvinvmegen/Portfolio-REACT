@@ -9,7 +9,7 @@ import { Component } from "react";
 class Header extends Component {
   state = {
     action: "Recrutez-moi !",
-    show: false
+    show: false,
   }
 
   toggleMenu = () => {
@@ -29,7 +29,7 @@ class Header extends Component {
           </header>
           <MobileMenu show={this.state.show} toggle={this.toggleMenu} />
         </div>
-        {/* <StickyHeader /> */}
+        <StickyHeader />
       </div>
     )
   }

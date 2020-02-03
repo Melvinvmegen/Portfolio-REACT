@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 
 const bannerRight = () => {
   return (
-    <Particles className="d-none d-sm-block col-sm-4 col-md-4 align-center"
+    <Particles className="d-none d-sm-block col-sm-3 col-md-3 align-center"
       params={{
         particles: {
           "line_linked": {
