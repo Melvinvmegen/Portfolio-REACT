@@ -122,6 +122,10 @@
   animation-duration: 1.5s;
 }
 
+.fa {
+  color: #d8dcee;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: .4
@@ -196,7 +200,11 @@
 }
 
 .carousel-indicators li {
-  background-color: #212529;
+  background-color: #d8dcee !important;
+}
+
+.carousel-indicators .active {
+  background-color: #82848e;
 }
 
 @media (max-width: 1025px) {

@@ -3,14 +3,13 @@ import Logo from "../Logo/Logo"
 import Nav from "../Nav/Nav";
 import CTA from "../CTA/CTA";
 
-const StickyHeader = (props) => {
+const StickyHeader = () => {
   let [isSticky, setSticky] = useState(false);
   let ref = 0;
 
   const handleScroll = () => {
     ref = window.pageYOffset
-    console.log(ref)
-      setSticky(ref >= 500)
+    setSticky(ref >= 496)
   };
 
   useEffect(() => {
@@ -22,7 +21,7 @@ const StickyHeader = (props) => {
   }, [])
 
   return (
-    <div id={isSticky ? 'sticky-header' : ''} class="sticky-header-wrapper">
+    <div id={isSticky ? 'sticky-header' : ''} className="sticky-header-wrapper">
       <div className="sticky-header-container">
         <Logo />
         <Nav />

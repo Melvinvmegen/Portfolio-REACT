@@ -159,7 +159,6 @@
 
 .nav-anim a .text {
   transform: translate3d(0, 0.7em, 0);
-  display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
@@ -223,6 +222,31 @@
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
+
+#hire-me {
+  background: rgb(51, 122, 183);
+  border: 2px solid #fff;
+  color: #fff !important;
+}
+
+#hire-me:hover {
+  background: white;
+  border: 2px solid rgb(51, 122, 183);
+  color: rgb(51, 122, 183) !important;
+}
+
+#sticky-hire-me {
+  background: transparent;
+  border: 2px solid rgb(51, 122, 183);
+  color: rgb(51, 122, 183);
+}
+
+#sticky-hire-me:hover {
+  background: rgb(51, 122, 183);
+  color: white !important;
+  border: 2px solid white;
+}
+
 
 @media (max-width: 768px) {
   .button-newsletter {

@@ -53,7 +53,9 @@ class Gallery extends Component {
       { id: 4, name: "React.js" },
       { id: 5, name: "Heroku" },
     ],
-    btnText : "Se rendre sur le site"
+    btnText : "Se rendre sur le site",
+    nextIcon: <span aria-hidden="true" className="fa fa-chevron-right" />,
+    prevIcon: <span aria-hidden="true" className="fa fa-chevron-left" />
   }
 
   render() {
@@ -66,7 +68,7 @@ class Gallery extends Component {
               <h2 className="title-bold align-center">MES PROJETS</h2>
               <h3 className="featured-item-subheader italic align-center">Découvrez un exemple concret de tout ce qui précède</h3>
             </div>
-            <Carousel className="gallery-content" interval="1000000">
+            <Carousel className="gallery-content" interval="1000000" nextIcon={this.state.nextIcon} prevIcon={this.state.prevIcon} >
               <Carousel.Item className="myslides fade-slide first-slide" data-aos="fade-up">
                 <CarouselImage img={this.state.images[0].img} alt={this.state.images[0].alt} />
                 <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
