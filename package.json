@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://melvinvmegen.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +16,7 @@
     "react-socks": "^2.1.0",
     "react-typed": "^1.2.0"
   },
+  "homepage": "https://melvinvmegen.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,7 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
-  }
+  "devDependencies": {}
 }
