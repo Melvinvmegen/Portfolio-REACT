@@ -3,7 +3,7 @@ import SocialLinks from "../../Components/SocialLinks/SocialLinks";
 import Newsletter from "../../Components/Newsletter/Newsletter";
 import FooterNav from './FooterNav/FooterNav'
 
-class footer extends Component {
+class Footer extends Component {
   state = {
     socialLinks: [
       { id: 1, name: 'LinkedIn', icon: 'fa-linkedin', ahref: "https://www.linkedin.com/in/melvin-van-megen/" },
@@ -79,5 +79,5 @@ class footer extends Component {
 
 }
 
-export default footer;
+export default Footer;
 
