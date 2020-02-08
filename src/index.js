@@ -5,9 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
-
-console.log("This is the process.env", process.env.PUBLIC_URL)
-
 const app = (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
