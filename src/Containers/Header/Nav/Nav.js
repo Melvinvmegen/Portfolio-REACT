@@ -9,7 +9,7 @@ const Nav = () => {
     <div className="main-header-center">
       <Breakpoint large up className="nav-menu">
         {content.main.map(link => {
-          return <div className="nav-menu-item" key={link.id} className={"http://localhost:3000/#" + link.name.replace(/ /g, "-") === document.URL ? "nav-anim" : ""} >
+          return <div className="nav-menu-item" key={link.id} className={"https://melvinvmegen.github.io/Portfolio/#" + link.name.replace(/ /g, "-") === document.URL ? "nav-anim" : ""} >
             <a href={"#" + link.name.replace(/ /g, "-")}>
               <span className="text">{link.name}</span>
               <span className="line -bottom"></span>
