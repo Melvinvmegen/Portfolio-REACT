@@ -69,7 +69,7 @@ class Gallery extends Component {
               <h3 className="featured-item-subheader italic align-center">Découvrez un exemple concret de tout ce qui précède</h3>
             </div>
             <Carousel className="gallery-content" interval="1000000" nextIcon={this.state.nextIcon} prevIcon={this.state.prevIcon} >
-              <Carousel.Item className="myslides fade-slide first-slide" data-aos="fade-up">
+              <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
                 <CarouselImage img={this.state.images[0].img} alt={this.state.images[0].alt} />
                 <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <CarouselContent title={this.state.content[0].title} desc={this.state.content[0].desc}/>
@@ -77,7 +77,7 @@ class Gallery extends Component {
                   <ButtonProject text={this.state.btnText}/>
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="myslides fade-slide first-slide" data-aos="fade-up">
+              <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
                 <CarouselImage img={this.state.images[1].img} alt={this.state.images[1].alt} />
                 <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <CarouselContent title={this.state.content[1].title} desc={this.state.content[1].desc} />
@@ -85,7 +85,7 @@ class Gallery extends Component {
                   <ButtonProject text={this.state.btnText} />
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="myslides fade-slide first-slide" data-aos="fade-up">
+              <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
                 <CarouselImage img={this.state.images[2].img} alt={this.state.images[2].alt} />
                 <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <CarouselContent title={this.state.content[2].title} desc={this.state.content[2].desc} />
@@ -93,7 +93,7 @@ class Gallery extends Component {
                   <ButtonProject text={this.state.btnText} />
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="myslides fade-slide first-slide" data-aos="fade-up">
+              <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
                 <CarouselImage img={this.state.images[3].img} alt={this.state.images[3].alt} />
                 <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
                   <CarouselContent title={this.state.content[3].title} desc={this.state.content[3].desc} />
