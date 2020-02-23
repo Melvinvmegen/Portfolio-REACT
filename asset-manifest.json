@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ccd6fd4d.chunk.css",
-    "main.js": "/Portfolio/static/js/main.db7c8d2c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.db7c8d2c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.fe552301.chunk.css",
+    "main.js": "/Portfolio/static/js/main.3ed3a7db.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.3ed3a7db.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f006703b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f006703b.js.map",
     "static/css/2.47e06e2e.chunk.css": "/Portfolio/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.378db81c.chunk.js": "/Portfolio/static/js/2.378db81c.chunk.js",
-    "static/js/2.378db81c.chunk.js.map": "/Portfolio/static/js/2.378db81c.chunk.js.map",
+    "static/js/2.a3b06555.chunk.js": "/Portfolio/static/js/2.a3b06555.chunk.js",
+    "static/js/2.a3b06555.chunk.js.map": "/Portfolio/static/js/2.a3b06555.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.1c74134ec8d05c89eb405121e24f15b0.js": "/Portfolio/precache-manifest.1c74134ec8d05c89eb405121e24f15b0.js",
+    "precache-manifest.83073fcb3303a4c5dc4860a291c2922f.js": "/Portfolio/precache-manifest.83073fcb3303a4c5dc4860a291c2922f.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/Portfolio/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.ccd6fd4d.chunk.css.map": "/Portfolio/static/css/main.ccd6fd4d.chunk.css.map",
-    "static/js/2.378db81c.chunk.js.LICENSE": "/Portfolio/static/js/2.378db81c.chunk.js.LICENSE",
+    "static/css/main.fe552301.chunk.css.map": "/Portfolio/static/css/main.fe552301.chunk.css.map",
+    "static/js/2.a3b06555.chunk.js.LICENSE": "/Portfolio/static/js/2.a3b06555.chunk.js.LICENSE",
     "static/media/goboat.jpg": "/Portfolio/static/media/goboat.13ece6c3.jpg",
     "static/media/mindseed.png": "/Portfolio/static/media/mindseed.5ec6cee7.png",
     "static/media/royalbrinkman.png": "/Portfolio/static/media/royalbrinkman.d69ed0c6.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.f006703b.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.378db81c.chunk.js",
-    "static/css/main.ccd6fd4d.chunk.css",
-    "static/js/main.db7c8d2c.chunk.js"
+    "static/js/2.a3b06555.chunk.js",
+    "static/css/main.fe552301.chunk.css",
+    "static/js/main.3ed3a7db.chunk.js"
   ]
 }
