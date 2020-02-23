@@ -5,6 +5,7 @@ import CTA from "./CTA/CTA";
 import StickyHeader from "./StickyHeader/StickyHeader";
 import MobileMenu from "./MobileMenu/MobileMenu"
 import { Component } from "react";
+import { BreakpointProvider } from 'react-socks';
 
 class Header extends Component {
   state = {
@@ -29,7 +30,9 @@ class Header extends Component {
           </header>
           <MobileMenu show={this.state.show} toggle={this.toggleMenu} />
         </div>
-        <StickyHeader />
+        <BreakpointProvider>
+          <StickyHeader show={this.state.show} toggle={this.toggleMenu} />
+        </BreakpointProvider>
       </div>
     )
   }

@@ -198,7 +198,12 @@
   }
 
   .home-face {
+    margin-top: 0 !important;
     padding-right: 2em;
     padding-left: 2em;
+  }
+
+  .blocks-hero {
+    height: 850px !important;
   }
 }

@@ -23,7 +23,7 @@ class Footer extends Component {
     ],
     linksMar: [
       {
-        id: 1, title: 'Développeur Back-End', links: [
+        id: 1, title: 'Back-End', links: [
           { id: 1, name: 'Ruby' },
           { id: 2, name: 'Rails' },
           { id: 3, name: 'SQL' },

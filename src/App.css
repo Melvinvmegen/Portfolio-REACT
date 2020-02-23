@@ -270,7 +270,11 @@ a:hover {
   }
 
   #sticky-header {
-    height: 90px;
+    height: 80px;
+  }
+
+  .sticky-header-container {
+    height: 80px;
   }
 
   .sticky-header-left {
@@ -329,10 +333,6 @@ a:hover {
   .ml4 {
     font-size: 3em;
     top: -100px;
-  }
-
-  #sticky-header {
-    height: 90px;
   }
 
   .sticky-header-left {
@@ -433,13 +433,17 @@ a:hover {
     top: -80px;
   }
 
-  #sticky-header {
-    height: 90px;
-  }
-
   .sticky-header-left {
     margin-top: 15px;
     padding-left: 10px;
+  }
+
+  #sticky-header {
+    height: 80px;
+  }
+
+  .sticky-header-container {
+    height: 60px;
   }
 
   #cta-wrapper-home {
