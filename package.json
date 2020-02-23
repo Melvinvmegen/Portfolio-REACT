@@ -18,7 +18,7 @@
     "react-socks": "^2.1.0",
     "react-typed": "^1.2.0"
   },
-  "homepage": "https://melvinvmegen.github.io/Portfolio",
+  "homepage": "https://melvinvmegen.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
