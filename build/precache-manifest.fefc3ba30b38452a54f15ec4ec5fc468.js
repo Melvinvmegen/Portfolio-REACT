@@ -1,31 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53415ec4b6da6c36beb3199165cec9d0",
+    "revision": "219876638f5a5f4920ec5b289e540fd5",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "658d84a2f70aabd4713c",
+    "revision": "baa08dc2460d24e0092b",
     "url": "/portfolio/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "95705fcdf7c6d7af0d5c",
-    "url": "/portfolio/static/css/main.fe552301.chunk.css"
+    "revision": "58e622d6b12ea8e8e5e8",
+    "url": "/portfolio/static/css/main.b2b8040e.chunk.css"
   },
   {
-    "revision": "658d84a2f70aabd4713c",
-    "url": "/portfolio/static/js/2.a3b06555.chunk.js"
+    "revision": "baa08dc2460d24e0092b",
+    "url": "/portfolio/static/js/2.9aceaeec.chunk.js"
   },
   {
     "revision": "28a66632071b0ad6a07bb7c465dc9b43",
-    "url": "/portfolio/static/js/2.a3b06555.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.9aceaeec.chunk.js.LICENSE"
   },
   {
-    "revision": "95705fcdf7c6d7af0d5c",
-    "url": "/portfolio/static/js/main.e9c81016.chunk.js"
+    "revision": "58e622d6b12ea8e8e5e8",
+    "url": "/portfolio/static/js/main.158f4fab.chunk.js"
   },
   {
     "revision": "6fef3673099b4dcdb973",
     "url": "/portfolio/static/js/runtime-main.fed7eca6.js"
+  },
+  {
+    "revision": "6d0f480e289fa1ed80ff5b8780d6e2b0",
+    "url": "/portfolio/static/media/PostGreSQL.6d0f480e.png"
+  },
+  {
+    "revision": "fb17ec15f2ec5b0bac1714eae5bed93e",
+    "url": "/portfolio/static/media/Rails.fb17ec15.png"
+  },
+  {
+    "revision": "b4f35fb5ba26b901ca02e7b7cd274b51",
+    "url": "/portfolio/static/media/Ruby.b4f35fb5.png"
   },
   {
     "revision": "13ece6c38f6982c51600c5aef0820138",
