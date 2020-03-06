@@ -1,5 +1,5 @@
 .component-footer {
-  background-color: #1b2733;
+  background-color: #254A5D;
 }
 
 .footer-full-row {
@@ -76,11 +76,15 @@
 }
 
 .social-links .icon {
-  padding: 20px;
+  padding-top: 20px;
   font-size: 20px;
   width: 70px;
   text-decoration: none;
   color: white !important;
+}
+
+.social-link {
+  color: white;
 }
 
 .icon:hover {
@@ -98,8 +102,13 @@
   font-weight: bold;
 }
 
+.logo_footer a {
+  color: #D1DDE6 !important;
+}
+
 .menu-item-title {
   color: #e0e2e4 !important;
+  font-weight: 700;
 }
 
 .newsletter-form p {
@@ -157,7 +166,7 @@ textarea {
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  color: #23527c;
+  color: #254A5D;
 }
 
 .menu-items {
@@ -179,6 +188,10 @@ textarea {
   margin-top: 24px;
   list-style-type: none;
   padding: 0;
+}
+
+.footer-link {
+  color: white !important;
 }
 
 @media (max-width: 1250px) {
@@ -228,7 +241,7 @@ textarea {
   }
 
   .social-links .icon {
-    padding: 20px 0 5px 0;
+    padding-top: 20px 0 5px 0;
     font-size: 15px;
   }
 

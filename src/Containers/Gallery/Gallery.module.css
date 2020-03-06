@@ -27,6 +27,7 @@
   font-weight: 800;
   text-align: center;
   padding-right: 13%;
+  color: #D1DDE6;
 }
 
 .description-slide {
@@ -34,6 +35,11 @@
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
   padding-right: 10%;
+  color: white;
+}
+
+.gallery-left .line-anim a .text {
+  color: white;
 }
 
 .carousel-item-next,
@@ -184,6 +190,15 @@
   background-color: #ccc;
 }
 
+.section-slide .featured-item-subheader {
+  color: #D1DDE6;
+}
+
+.section-slide .title-bold {
+  color: #D1DDE6;
+}
+
+
 .gallery-dot {
   height: 13px;
   width: 13px;
@@ -211,6 +226,7 @@
   .carousel-indicators {
     top: 40%;
   }
+
   .title-slide {
     line-height: 2;
   }
@@ -239,6 +255,7 @@
     line-height: 1.5;
     font-size: 15px;
     padding: 0;
+    color: white;
   }
 
   .params-slide {

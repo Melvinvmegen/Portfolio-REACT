@@ -18,7 +18,7 @@
 .button-newsletter {
   width: 30%;
   margin-left: -2%;
-  background: rgb(35, 82, 124);
+  background: #F9423A;
   color: #fff;
   font-weight: 700;
   text-align: center;
@@ -56,14 +56,14 @@
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #ffee00;
+  background: #F9423A;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 
 .line-anim .line {
   position: absolute;
-  background: #ffee00;
+  background: #F9423A;
 }
 
 .line-anim .line.-right,
@@ -224,25 +224,25 @@
 }
 
 #hire-me {
-  background: rgb(51, 122, 183);
+  background: #254A5D;
   border: 2px solid #fff;
   color: #fff !important;
 }
 
 #hire-me:hover {
   background: white;
-  border: 2px solid rgb(51, 122, 183);
-  color: rgb(51, 122, 183) !important;
+  border: 2px solid #254A5D;
+  color: #254A5D !important;
 }
 
 #sticky-hire-me {
   background: transparent;
-  border: 2px solid rgb(51, 122, 183);
-  color: rgb(51, 122, 183);
+  border: 2px solid #254A5D;
+  color: #254A5D;
 }
 
 #sticky-hire-me:hover {
-  background: rgb(51, 122, 183);
+  background: #254A5D;
   color: white !important;
   border: 2px solid white;
 }
@@ -265,6 +265,7 @@
   .hire-me-mobile .header-hire-me .cta-button {
     padding: 1rem 3rem !important;
   }
+
   .line-anim a .text {
     font-size: 14px;
   }

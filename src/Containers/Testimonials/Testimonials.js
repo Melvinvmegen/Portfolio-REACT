@@ -7,7 +7,7 @@ class Testimonials extends Component {
     testimonials: [
       {
         id: 1,
-        avatar: "https://media.licdn.com/dms/image/C4D03AQGW-JP_-b78zQ/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=R12qVgJftT4HTSBvDIVeQCTwljB0lWWrbXQGFI4qTw4",
+        avatar: "https://royalbrinkman.com/content/files/images/foto's/Sarah/mensen/rob.helderman@royalbrinkman.com.png",
         name: "Rob Helderman",
         company: "E-commerce Manager, Royal Brinkman",
         quote: "Il prend des mesures générales visant tous les facteurs environnementaux de la partie digitale.De la gestion d'articles, CRM, aux campagnes e-mail, en passant par le référencement naturel et le SEA."
@@ -33,9 +33,10 @@ class Testimonials extends Component {
 
     return (
       <div className="section-testimonial" >
-        <div>
+        <div className="section-main-testimonials">
           <div className="section-title title-center" data-aos="zoom-in-up">
-            <h2 className="title-bold">Ils m'ont fait confiance</h2>
+            <h2 className="title-bold">ILS M'ONT FAIT CONFIANCE</h2>
+            <h3 class="featured-item-subheader italic align-center">Pour leurs projets de développement d'application web</h3>
           </div>
           <div className="row-fluid">
             <div className="section-testimonials">

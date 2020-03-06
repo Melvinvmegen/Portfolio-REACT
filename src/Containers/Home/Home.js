@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import SectionOne from "./SectionOne/SectionOne";
 import SectionTwo from "./SectionTwo/SectionTwo";
 import SectionThree from "./SectionThree/SectionThree";
@@ -6,14 +6,13 @@ import SectionThree from "./SectionThree/SectionThree";
 class Home extends Component {
   render() {
     return (
-      <div className="section-main">
+      <Fragment>
         <SectionOne />
         <SectionTwo />
         <SectionThree />
-      </div>
+      </Fragment>
     )
   }
 }
 
 export default Home;
-

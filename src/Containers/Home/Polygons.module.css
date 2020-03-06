@@ -3,16 +3,20 @@
   height: 300px;
   width: 300px;
   shape-outside: circle();
-  background-color: white;
-  border: 2px solid;
+  background-color: transparent;
+  border: 2px solid #254A5D;
   border-radius: 50%;
+}
+
+.section-one .circle {
+  border: 2px solid #D1DDE6;
 }
 
 .clipped-border {
   -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   padding: 5px;
-  background: #23527c;
+  background: #D1DDE6;
   width: 150px;
   height: 150px;
   max-height: 250px;

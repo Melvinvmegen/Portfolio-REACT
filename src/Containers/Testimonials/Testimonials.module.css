@@ -6,6 +6,18 @@
   min-height: 90vh;
 }
 
+.section-main-testimonials {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
 .section-testimonials {
   justify-content: center;
   display: flex;
@@ -151,6 +163,7 @@ blockquote {
   .testimonials-slide {
     margin: 0 20px;
   }
+
   .testimonial-infos {
     height: 80px;
   }

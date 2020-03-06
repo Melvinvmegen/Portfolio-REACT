@@ -51,7 +51,7 @@ class Footer extends Component {
             <div className="footer-header">
               <div className="footer-header-inner">
                 <div className="footer-header-inner-left">
-                  <h1><a href="/">Contact me</a></h1>
+                  <h1 className="logo_footer"><a href="/">Contact me</a></h1>
                 </div>
                 <div className="footer-header-inner-right">
                   <SocialLinks links={this.state.socialLinks} />

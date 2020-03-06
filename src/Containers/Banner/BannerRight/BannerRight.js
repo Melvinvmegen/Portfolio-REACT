@@ -9,7 +9,7 @@ const bannerRight = () => {
           "line_linked": {
             "enable": true,
             "distance": 100,
-            "color": "#3CA9D1",
+            "color": "#254A5D",
             "opacity": 0.6,
             "width": 1
           }

@@ -20,15 +20,17 @@ class SectionThree extends Component {
   render() {
     return (
       <div id="section-three" className="section-three">
-        <a href="/" id="Marketeur-Digital" className="section-anchor"> </a>
-        <div className="section-wrapper">
-          <div className="section-left col-xs-12 col-sm-6 col-md-6">
-            <BlaBla blabla={this.state.blabla} />
-            <ButtonProject text={this.state.btnText}/>
-          </div>
-          <div className="section-right d-none d-sm-block col-sm-6 col-md-6 align-center">
-            <div className="section-wrapper-right">
-              <Polygons inputs={this.state.inputs} />
+        <div className="section-main">
+          <a href="/" id="Marketeur-Digital" className="section-anchor"> </a>
+          <div className="section-wrapper">
+            <div className="section-left col-xs-12 col-sm-6 col-md-6">
+              <BlaBla blabla={this.state.blabla} />
+              <ButtonProject text={this.state.btnText} />
+            </div>
+            <div className="section-right d-none d-sm-block col-sm-6 col-md-6 align-center">
+              <div className="section-wrapper-right">
+                <Polygons inputs={this.state.inputs} />
+              </div>
             </div>
           </div>
         </div>

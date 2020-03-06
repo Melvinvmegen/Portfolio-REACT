@@ -5,7 +5,8 @@ const socialLinks = (props) => {
     <ul className="social-links">
       {props.links.map(link => {
         return <li key={link.id}>
-          <a href={link.href} className={"icon fa " + link.icon}>
+          <a href={link.href}>
+            <i className={"icon fa " + link.icon}></i>
             <p className="social-link">{link.name}</p>
           </a>
         </li>
