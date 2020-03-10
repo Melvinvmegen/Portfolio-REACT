@@ -27,7 +27,7 @@ const StickyHeader = (props) => {
       <Breakpoint large up className="sticky-header-container">
         <Logo />
         <Nav />
-        <CTA />
+        <CTA modal={props.modal} />
       </Breakpoint>
       <Breakpoint medium down className="sticky-header-container">
         <MobileMenu show={props.show} toggle={props.toggle} />

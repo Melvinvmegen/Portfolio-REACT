@@ -14,7 +14,8 @@ class SectionThree extends Component {
       { id: 2, alt: 'Ahrefs', img: 'https://cdn.ahrefs.com/images/mediakit/logo_monochrome@2x.png' },
       { id: 3, alt: 'AdWords', img: 'https://3x5yp62s8loz3jw8273enqos16xh-wpengine.netdna-ssl.com/wp-content/uploads/icon360-Analytics.png' }
     ],
-    btnText: "Découvrez mes projets"
+    btnText: "Découvrez mes projets",
+    href: "#Mes-Projets"
   }
 
   render() {
@@ -25,7 +26,7 @@ class SectionThree extends Component {
           <div className="section-wrapper">
             <div className="section-left col-xs-12 col-sm-6 col-md-6">
               <BlaBla blabla={this.state.blabla} />
-              <ButtonProject text={this.state.btnText} />
+              <ButtonProject text={this.state.btnText} href={this.state.href} />
             </div>
             <div className="section-right d-none d-sm-block col-sm-6 col-md-6 align-center">
               <div className="section-wrapper-right">

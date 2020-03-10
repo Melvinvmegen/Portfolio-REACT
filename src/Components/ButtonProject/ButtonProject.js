@@ -3,7 +3,7 @@ import React from 'react'
 const buttonProject = (props) => {
   return (
     <div className="line-anim">
-      <a href="#my-projects">
+      <a href={props.href}>
         <span className="text">► {props.text}</span>
         <span className="line -right"></span>
         <span className="line -top"></span>

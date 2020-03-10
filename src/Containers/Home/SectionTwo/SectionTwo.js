@@ -17,7 +17,8 @@ class SectionTwo extends Component {
       { id: 2, alt: 'Rails', img: Ruby },
       { id: 3, alt: 'PostgreSQL', img: Rails }
     ],
-    btnText: "Découvrez mes projets"
+    btnText: "Découvrez mes projets",
+    href: "#Mes-Projets"
   }
 
   render() {
@@ -33,7 +34,7 @@ class SectionTwo extends Component {
             </div>
             <div className="section-right col-xs-12 col-sm-6 col-md-6">
               <BlaBla blabla={this.state.blabla} />
-              <ButtonProject text={this.state.btnText} />
+              <ButtonProject text={this.state.btnText} href={this.state.href} />
             </div>
           </div>
         </div>

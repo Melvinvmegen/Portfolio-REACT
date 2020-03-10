@@ -14,7 +14,8 @@ class SectionOne extends Component {
       { id: 2, alt: 'React', img: 'https://oneteamsolutions.in/images/upload/post-33.png' },
       { id: 3, alt: 'CSS3', img: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' }
     ],
-    btnText: "Découvrez mes projets"
+    btnText: "Découvrez mes projets",
+    href: "#Mes-Projets"
   }
 
   render() {
@@ -25,7 +26,7 @@ class SectionOne extends Component {
           <div className="section-wrapper">
             <div className="section-left col-xs-12 col-sm-6 col-md-6">
               <BlaBla blabla={this.state.blabla} />
-              <ButtonProject text={this.state.btnText} />
+              <ButtonProject text={this.state.btnText} href={this.state.href} />
             </div>
             <div className="section-right d-none d-sm-block col-sm-6 col-md-6 align-center">
               <div className="section-wrapper-right">

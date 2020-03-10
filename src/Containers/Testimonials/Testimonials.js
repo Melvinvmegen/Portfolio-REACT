@@ -36,7 +36,7 @@ class Testimonials extends Component {
         <div className="section-main-testimonials">
           <div className="section-title title-center" data-aos="zoom-in-up">
             <h2 className="title-bold">ILS M'ONT FAIT CONFIANCE</h2>
-            <h3 class="featured-item-subheader italic align-center">Pour leurs projets de développement d'application web</h3>
+            <h3 className="featured-item-subheader italic align-center">Pour leurs projets de développement d'application web</h3>
           </div>
           <div className="row-fluid">
             <div className="section-testimonials">

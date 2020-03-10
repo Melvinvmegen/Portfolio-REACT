@@ -9,7 +9,6 @@ const Testimonial = (props) => {
   const handleScroll = () => {
     ref = window.pageYOffset
     setVisible(ref >= 4000)
-    console.log(ref)
   };
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const Testimonial = (props) => {
     <Fragment>
       <Breakpoint medium up className="testimonials-list">
         {props.testimonials.map(testimonial => {
-          return <div className={isVisible ? "testimonials-slide col-xs-12 col-sm-4 col-md-4 d-sm-flex show-on-scroll is-visible" : "testimonials-slide col-xs-12 col-sm-4 col-md-4 d-sm-flex show-on-scroll" } key={testimonial.id}>
+          return <div className={isVisible ? "testimonials-slide col-xs-12 col-sm-4 col-md-4 d-sm-flex show-on-scroll is-visible" : "testimonials-slide col-xs-12 col-sm-4 col-md-4 d-sm-flex show-on-scroll"} key={testimonial.id}>
             <div className="slide-container card-testimonial testimonials">
               <div className="testimonials-content">
                 <div className="testimonial-infos">
