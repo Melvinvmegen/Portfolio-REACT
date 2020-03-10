@@ -1,51 +1,79 @@
-import React from 'react';
-import Button from '../../../Components/HireMe/HireMe'
+import React, { Fragment } from 'react';
+import Button from '../../../Components/FormSubmit/FormSubmit'
 import Input from "../../../Components/Input/Input"
 import { Component } from 'react';
 import axios from '../../../axios-contacts'
+import classes from './ContactForm.module.css'
+import Spinner from "../../../Components/Spinner/Spinner";
 
 class ContactForm extends Component {
   state = {
+    loading: false,
     orderForm: {
       name: {
         elementType: 'input',
         elementConfig: {
           type: 'text',
-          placeholder: 'Your Name'
+          placeholder: 'Nom, prénom'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
       },
-      street: {
+      company: {
         elementType: 'input',
         elementConfig: {
           type: 'text',
-          placeholder: 'Your street'
+          placeholder: 'Entreprise'
         },
-        value: ''
-      },
-      zipCode: {
-        elementType: 'input',
-        elementConfig: {
-          type: 'text',
-          placeholder: 'Zip Code'
+        value: '',
+        validation: {
+          required: true,
         },
-        value: ''
-      },
-      country: {
-        elementType: 'input',
-        elementConfig: {
-          type: 'text',
-          placeholder: 'Your country'
-        },
-        value: ''
+        valid: false,
+        touched: false
       },
       email: {
         elementType: 'input',
         elementConfig: {
           type: 'email',
-          placeholder: 'Your Name'
+          placeholder: 'E mail@gmail.com'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
+      },
+      city: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Ville'
+        },
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
+      },
+      request: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Demande'
+        },
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
       }
     }
   }
@@ -58,13 +86,16 @@ class ContactForm extends Component {
       ...form[inputIdentifier]
     };
     updatedFormElement.value = event.target.value;
+    updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
+    updatedFormElement.touched = true;
+    console.log(updatedFormElement)
     form[inputIdentifier] = updatedFormElement
     this.setState({ orderForm: form })
   }
 
   contactHandler = (event) => {
     event.preventDefault();
-    console.log('jsuis la')
+    this.setState({ loading: true });
     const formData = {};
     for (let formElement in this.state.orderForm) {
       formData[formElement] = this.state.orderForm[formElement].value;
@@ -72,9 +103,19 @@ class ContactForm extends Component {
     const contact = {
       contactData: formData
     }
-    axios.post('/contacts.json', contact)
-      .then(response => { console.log(response) })
-      .catch(error => console.log(error));
+    axios.post('/contacts', contact)
+      .then(response => { this.setState({ loading: false }) })
+      .catch(error => { this.setState({ loading: false }) });
+  }
+
+  checkValidity(value, rules) {
+    let isValid = true;
+
+    if (rules.required) {
+      isValid = value.trim() !== '' && isValid;
+    }
+
+    return isValid
   }
 
   render() {
@@ -85,19 +126,30 @@ class ContactForm extends Component {
         config: this.state.orderForm[key]
       })
     }
+
+    let contactForm = <form onSubmit={this.contactHandler}>
+      <h2 className={classes.titleForm}>Prenons contact</h2>
+      {formElementsArray.map(formElement => (
+        <Input
+          key={formElement.id}
+          elementType={formElement.config.elementType}
+          elementConfig={formElement.config.elementConfig}
+          value={formElement.config.value}
+          changed={(event) => this.inputChangedHandler(event, formElement.id)}
+          invalid={!formElement.config.valid}
+          shouldValidate={formElement.config.validation}
+          touched={formElement.config.touched} />
+      ))}
+      <Button wrapperClass={classes.wrapperBtnForm} btnClass={classes.btnForm} id={classes.submitForm} />
+    </form >;
+    if (this.state.loading) {
+      contactForm = <Spinner />
+    }
     return (
       (
-        <form onSubmit={this.contactHandler}>
-          {formElementsArray.map(formElement => (
-            <Input
-              key={formElement.id}
-              elementType={formElement.config.elementType}
-              elementConfig={formElement.config.elementConfig}
-              value={formElement.config.value}
-              changed={(event) => this.inputChangedHandler(event, formElement.id)} />
-          ))}
-          <Button />
-        </form>
+        <Fragment>
+          {contactForm}
+        </Fragment>
       )
     )
   }

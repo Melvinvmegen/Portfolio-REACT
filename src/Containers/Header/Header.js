@@ -6,14 +6,16 @@ import StickyHeader from "./StickyHeader/StickyHeader";
 import MobileMenu from "./MobileMenu/MobileMenu"
 import { Component } from "react";
 import { BreakpointProvider } from 'react-socks';
+import axios from '../../axios-contacts'
 import Modal from "../../Components/Modal/Modal";
 import ContactForm from "./ContactForm/ContactForm";
+import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler"
 
 class Header extends Component {
   state = {
     action: "Recrutez-moi !",
     show: false,
-    visible: false
+    visible: false,
   }
 
   toggleMenu = () => {
@@ -30,10 +32,11 @@ class Header extends Component {
   }
 
   render() {
+
     return (
       <div className="site-header">
         <Modal show={this.state.visible} modalClosed={this.modalClosing} >
-          <ContactForm />
+          <ContactForm show={this.state.visible} />
         </Modal>
         <div className="site-header-wrapper">
           <header className="main-header d-none d-sm-none d-md-none d-lg-flex">
@@ -51,5 +54,5 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withErrorHandler(Header, axios);
 

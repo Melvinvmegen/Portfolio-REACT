@@ -12,16 +12,30 @@
 
 .InputElement {
   outline: none;
-  border: 1px solid #ccc;
-  background-color: white;
   font: inherit;
   padding: 6px 10px;
   display: block;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto !important;
   box-sizing: border-box;
+  background: white !important;
+  height: 3rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  border: 1px solid #E7E7E7 !important;
 }
 
 .InputElement:focus {
   outline: none;
   background-color: #ccc;
+}
+
+.Invalid {
+  border-color: red !important;
+}
+
+.ValidationError {
+  color: red;
+  margin: 0 auto;
+  width: 75%;
 }
