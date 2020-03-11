@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import ContentContext from '../../../context/content-context'
 import { Breakpoint } from 'react-socks';
 
 class Nav extends Component {
-  static contextType = ContentContext
   state = {
     main: [
       { id: 1, name: 'Developpeur Front-end', active: false },
@@ -11,20 +9,6 @@ class Nav extends Component {
       { id: 3, name: 'Marketeur Digital', active: false },
       { id: 4, name: 'Mes Projets', active: false },
     ]
-  }
-
-  toggleActive = (index) => {
-    const links = [...this.state.main]
-    const alreadyActive = links.filter(link => link.active === true);
-    if (alreadyActive.length > 0) {
-      alreadyActive[0].active = false
-      links[index].active = !links[index].active
-      this.setState({ main: links })
-    }
-    else {
-      links[index].active = !links[index].active
-      this.setState({ main: links })
-    }
   }
 
   toggleScroll = () => {
@@ -61,11 +45,11 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.toggleScroll.bind(this).bind(this));
+    window.addEventListener('scroll', this.toggleScroll.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.toggleScroll.bind(this).bind(this));
+    window.removeEventListener('scroll', this.toggleScroll.bind(this));
   }
 
   render() {
@@ -73,8 +57,8 @@ class Nav extends Component {
     return (
       <div className="main-header-center" >
         <Breakpoint large up className="nav-menu">
-          {this.state.main.map((link, index) => {
-            return <div className="nav-menu-item" key={link.id} onClick={() => this.toggleActive(index)} className={link.active || window.location.hash == "#" + link.name.replace(/ /g, "-") ? "nav-anim" : "nav-item"} >
+          {this.state.main.map((link) => {
+            return <div className="nav-menu-item" key={link.id} className={link.active ? "nav-anim" : "nav-item"} >
               <a href={"#" + link.name.replace(/ /g, "-")} data-target={link.id}>
                 <span className="text" data-target={link.id}>{link.name}</span>
                 <span className="line -bottom"></span>
