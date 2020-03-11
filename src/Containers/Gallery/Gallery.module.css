@@ -170,11 +170,6 @@
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #D9CA93;
-}
-
 .gallery-nav {
   margin-top: 15px;
   text-align: center;

@@ -150,6 +150,10 @@
   margin: 0;
 }
 
+.nav-item:hover a {
+  color: #547f96 !important;
+}
+
 .nav-menu div {
   display: -webkit-box;
   display: -moz-box;
