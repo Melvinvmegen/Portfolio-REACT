@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e46c6efb.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e487c083.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e487c083.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.09eb980a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.060b74c6.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.060b74c6.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f006703b.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f006703b.js.map",
     "static/css/2.47e06e2e.chunk.css": "/Portfolio/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.406aec90.chunk.js": "/Portfolio/static/js/2.406aec90.chunk.js",
-    "static/js/2.406aec90.chunk.js.map": "/Portfolio/static/js/2.406aec90.chunk.js.map",
+    "static/js/2.8545b982.chunk.js": "/Portfolio/static/js/2.8545b982.chunk.js",
+    "static/js/2.8545b982.chunk.js.map": "/Portfolio/static/js/2.8545b982.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.9b14313fd503687ecd29157acaaf1291.js": "/Portfolio/precache-manifest.9b14313fd503687ecd29157acaaf1291.js",
+    "precache-manifest.0baf1f6b161a3d6b124c873d7f39dff5.js": "/Portfolio/precache-manifest.0baf1f6b161a3d6b124c873d7f39dff5.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/Portfolio/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.e46c6efb.chunk.css.map": "/Portfolio/static/css/main.e46c6efb.chunk.css.map",
-    "static/js/2.406aec90.chunk.js.LICENSE": "/Portfolio/static/js/2.406aec90.chunk.js.LICENSE",
+    "static/css/main.09eb980a.chunk.css.map": "/Portfolio/static/css/main.09eb980a.chunk.css.map",
+    "static/js/2.8545b982.chunk.js.LICENSE": "/Portfolio/static/js/2.8545b982.chunk.js.LICENSE",
     "static/media/PostGreSQL.png": "/Portfolio/static/media/PostGreSQL.6d0f480e.png",
     "static/media/Rails.png": "/Portfolio/static/media/Rails.fb17ec15.png",
     "static/media/Ruby.png": "/Portfolio/static/media/Ruby.b4f35fb5.png",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.f006703b.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.406aec90.chunk.js",
-    "static/css/main.e46c6efb.chunk.css",
-    "static/js/main.e487c083.chunk.js"
+    "static/js/2.8545b982.chunk.js",
+    "static/css/main.09eb980a.chunk.css",
+    "static/js/main.060b74c6.chunk.js"
   ]
 }
