@@ -103,11 +103,17 @@ class Newsletter extends Component {
               shouldValidate={formElement.config.validation}
               touched={formElement.config.touched}
               classInput={classes.newsletterInput}
-              classDiv={classes.newsletterDiv} />
+              classDiv={classes.newsletterDiv}
+              validationClass={classes.validationClass} />
           ))}
           <Button wrapperClass={classes.wrapperBtnForm} btnClass={classes.btnNewsletter} id={classes.submitForm} action="S'inscrire" formIsValid={this.state.formIsValid} />
         </form>
-        {this.state.sent ? <p className={classes.submitNotif}>Vous voilà inscris à la meilleure newsletter !</p> : null}
+        {this.state.sent ?
+          <div className={classes.Flash}>
+            <span><strong>Yay!</strong> 🎉 Vous voilà inscris à ma newsletter !</span>
+          </div>
+          : null
+        }
       </div>
     )
   }

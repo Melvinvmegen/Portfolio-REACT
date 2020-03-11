@@ -24,9 +24,21 @@
   cursor: pointer;
 }
 
-.submitNotif {
-  margin-top: 5px;
-  padding: 10px;
-  background: #D1DDE6;
+.Flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 8px;
+  border: 2px solid #1EDD88;
   width: 95%;
+}
+
+.validationClass {
+  color: red;
+  margin: 5px;
+  width: 100%;
 }
