@@ -2,16 +2,31 @@ import React, { Component } from 'react'
 import Typed from 'react-typed';
 import HomeText from './HomeText/HomeText';
 import HireMe from '../../../Components/HireMe/HireMe'
+import Modal from "../../../Components/Modal/Modal";
+import ContactForm from "../../../Components/ContactForm/ContactForm";
+
 
 class BannerLeft extends Component {
   state = {
     action: "Recrutez-moi !",
-    id: "hire-me"
+    id: "hire-me",
+    visible: false,
+  }
+
+  modalHandler = () => {
+    this.setState({ visible: true })
+  }
+
+  modalClosing = () => {
+    this.setState({ visible: false })
   }
 
   render() {
     return (
       <div className="header">
+        <Modal show={this.state.visible} modalClosed={this.modalClosing} >
+          <ContactForm show={this.state.visible} />
+        </Modal>
         <div className="typed-container">
           <Typed
             strings={[
@@ -29,7 +44,7 @@ class BannerLeft extends Component {
         </div>
         <div id="cta-wrapper-home">
           <HomeText />
-          <HireMe id={this.state.id} action={this.state.action} />
+          <HireMe id={this.state.id} action={this.state.action} modal={this.modalHandler} />
         </div>
       </div>
     )

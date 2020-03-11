@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
-import Button from '../../../Components/FormSubmit/FormSubmit'
-import Input from "../../../Components/Input/Input"
-import { Component } from 'react';
-import axios from '../../../axios-contacts'
+import React, { Fragment, Component } from 'react';
+import Button from '../FormSubmit/FormSubmit'
+import Input from "../Input/Input"
+import axios from '../../axios-contacts'
 import classes from './ContactForm.module.css'
-import Spinner from "../../../Components/Spinner/Spinner";
+import Spinner from "../Spinner/Spinner";
 
 class ContactForm extends Component {
   state = {
@@ -40,11 +39,12 @@ class ContactForm extends Component {
         elementType: 'input',
         elementConfig: {
           type: 'email',
-          placeholder: 'E mail@gmail.com'
+          placeholder: 'Email@gmail.com'
         },
         value: '',
         validation: {
           required: true,
+          isEmail: true
         },
         valid: false,
         touched: false
@@ -74,8 +74,9 @@ class ContactForm extends Component {
         },
         valid: false,
         touched: false
-      }
-    }
+      },
+    },
+    formIsValid: false
   }
 
   inputChangedHandler = (event, inputIdentifier) => {
@@ -88,9 +89,13 @@ class ContactForm extends Component {
     updatedFormElement.value = event.target.value;
     updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
     updatedFormElement.touched = true;
-    console.log(updatedFormElement)
     form[inputIdentifier] = updatedFormElement
-    this.setState({ orderForm: form })
+    let formIsValid = true;
+    for (let inputIdentifier in form) {
+      formIsValid = form[inputIdentifier].valid && formIsValid;
+
+    }
+    this.setState({ orderForm: form, formIsValid: formIsValid })
   }
 
   contactHandler = (event) => {
@@ -103,9 +108,17 @@ class ContactForm extends Component {
     const contact = {
       contactData: formData
     }
-    axios.post('/contacts', contact)
-      .then(response => { this.setState({ loading: false }) })
-      .catch(error => { this.setState({ loading: false }) });
+    axios.post('/contacts.json', contact)
+      .then(response => {
+        this.setState({ loading: false }, () => {
+          this.props.modalClosed();
+        })
+      })
+      .catch(error => {
+        this.setState({ loading: false }, () => {
+          this.props.modalClosed();
+        })
+      });
   }
 
   checkValidity(value, rules) {
@@ -115,6 +128,10 @@ class ContactForm extends Component {
       isValid = value.trim() !== '' && isValid;
     }
 
+    if (rules.isEmail) {
+      const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+      isValid = pattern.test(value) && isValid
+    }
     return isValid
   }
 
@@ -140,8 +157,8 @@ class ContactForm extends Component {
           shouldValidate={formElement.config.validation}
           touched={formElement.config.touched} />
       ))}
-      <Button wrapperClass={classes.wrapperBtnForm} btnClass={classes.btnForm} id={classes.submitForm} />
-    </form >;
+      <Button wrapperClass={classes.wrapperBtnForm} btnClass={classes.btnForm} id={classes.submitForm} formIsValid={this.state.formIsValid} />
+    </form>;
     if (this.state.loading) {
       contactForm = <Spinner />
     }

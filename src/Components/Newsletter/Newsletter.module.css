@@ -1,0 +1,32 @@
+.newsletterForm {
+  display: flex !important;
+}
+
+.newsletterInput {
+  border-radius: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.newsletterDiv {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+}
+
+.btnNewsletter {
+  width: 100%;
+  margin-left: -2%;
+  background: #f9423a;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submitNotif {
+  margin-top: 5px;
+  padding: 10px;
+  background: #D1DDE6;
+  width: 95%;
+}

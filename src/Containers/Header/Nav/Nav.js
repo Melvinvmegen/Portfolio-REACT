@@ -24,7 +24,7 @@ class Nav extends Component {
       <div className="main-header-center" >
         <Breakpoint large up className="nav-menu">
           {this.context.main.map((link, index) => {
-            return <div className="nav-menu-item" key={link.id} onClick={() => this.toggleActive(index)} className={link.active ? "nav-anim" : ""} >
+            return <div className="nav-menu-item" key={link.id} onClick={() => this.toggleActive(index)} className={link.active || window.location.hash == "#" + link.name.replace(/ /g, "-") ? "nav-anim" : ""} >
               <a href={"#" + link.name.replace(/ /g, "-")} data-target={link.id}>
                 <span className="text" data-target={link.id}>{link.name}</span>
                 <span className="line -bottom"></span>

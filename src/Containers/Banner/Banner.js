@@ -8,7 +8,7 @@ const banner = () => {
       <div className="blocks-hero" id="first-child">
         <div className="main-container">
           <div className="home-face">
-            <BannerLeft/>
+            <BannerLeft />
             <BannerRight />
           </div>
         </div>

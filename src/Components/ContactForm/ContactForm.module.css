@@ -28,6 +28,17 @@
   color: #fff !important;
 }
 
+#submitForm:disabled {
+  color: #ccc !important;
+}
+
+#submitForm:disabled:hover {
+  background: #F9423A;
+  border: 2px solid #fff;
+  color: #ccc !important;
+}
+
+
 #submitForm:hover {
   background: #fff;
   border: 2px solid #F9423A;

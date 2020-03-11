@@ -8,7 +8,7 @@ import { Component } from "react";
 import { BreakpointProvider } from 'react-socks';
 import axios from '../../axios-contacts'
 import Modal from "../../Components/Modal/Modal";
-import ContactForm from "./ContactForm/ContactForm";
+import ContactForm from "../../Components/ContactForm/ContactForm";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler"
 
 class Header extends Component {
@@ -36,7 +36,7 @@ class Header extends Component {
     return (
       <div className="site-header">
         <Modal show={this.state.visible} modalClosed={this.modalClosing} >
-          <ContactForm show={this.state.visible} />
+          <ContactForm show={this.state.visible} modalClosed={this.modalClosing} />
         </Modal>
         <div className="site-header-wrapper">
           <header className="main-header d-none d-sm-none d-md-none d-lg-flex">
