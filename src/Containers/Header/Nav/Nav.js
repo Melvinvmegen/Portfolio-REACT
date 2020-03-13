@@ -21,24 +21,36 @@ class Nav extends Component {
     const sectionTestimonials = document.querySelector('.section-testimonial')
     if (ref >= sectionOne.offsetTop && ref <= sectionTwo.offsetTop) {
       links[0].active = true
+      links[1].active = false
+      links[2].active = false
+      links[3].active = false
       this.setState({ main: links })
     }
     else if (ref >= sectionTwo.offsetTop && ref <= sectionThree.offsetTop) {
       links[0].active = false
       links[1].active = true
+      links[2].active = false
+      links[3].active = false
       this.setState({ main: links })
     }
     else if (ref >= sectionThree.offsetTop && ref <= sectionGallery.offsetTop) {
+      links[0].active = false
       links[1].active = false
       links[2].active = true
+      links[3].active = false
       this.setState({ main: links })
     }
     else if (ref >= sectionGallery.offsetTop && ref <= sectionTestimonials.offsetTop) {
+      links[0].active = false
+      links[1].active = false
       links[2].active = false
       links[3].active = true
       this.setState({ main: links })
     }
-    else if (ref >= sectionGallery.offsetTop) {
+    else {
+      links[0].active = false
+      links[1].active = false
+      links[2].active = false
       links[3].active = false
       this.setState({ main: links })
     }
@@ -57,7 +69,7 @@ class Nav extends Component {
     return (
       <div className="main-header-center" >
         <Breakpoint large up className="nav-menu">
-          {this.state.main.map((link) => {
+          {this.state.main.map((link, index) => {
             return <div className="nav-menu-item" key={link.id} className={link.active ? "nav-anim" : "nav-item"} >
               <a href={"#" + link.name.replace(/ /g, "-")} data-target={link.id}>
                 <span className="text" data-target={link.id}>{link.name}</span>

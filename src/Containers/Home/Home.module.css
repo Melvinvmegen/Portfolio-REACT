@@ -12,9 +12,14 @@
   padding: 0;
 }
 
-.section-anchor {
+.section-anchor-first {
   position: absolute;
   top: -180px;
+}
+
+.section-anchor {
+  position: absolute;
+  top: -90px;
 }
 
 .blocks {

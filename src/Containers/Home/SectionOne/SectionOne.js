@@ -22,7 +22,7 @@ class SectionOne extends Component {
     return (
       <div id="section-one" className="section-one">
         <div className="section-main">
-          <a href="/" id="Developpeur-Front-end" className="section-anchor"> </a>
+          <a href="/" id="Developpeur-Front-end" className="section-anchor-first"> </a>
           <div className="section-wrapper">
             <div className="section-left col-xs-12 col-sm-6 col-md-6">
               <BlaBla blabla={this.state.blabla} />
