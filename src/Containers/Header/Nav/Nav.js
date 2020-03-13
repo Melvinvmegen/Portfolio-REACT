@@ -69,7 +69,7 @@ class Nav extends Component {
         <Breakpoint medium down className="nav-menu-mobile">
           {this.state.main.map(link => {
             return <div className="nav-menu-item" key={link.id}>
-              <a href={"#" + link.name.replace(/ /g, "-")} className=""><span className="text">{link.name}</span></a>
+              <a href={"#" + link.name.replace(/ /g, "-")} className="" onClick={this.props.toggle}><span className="text">{link.name}</span></a>
               <span className="line -bottom"></span>
             </div>
           })}

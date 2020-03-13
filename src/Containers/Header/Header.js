@@ -35,16 +35,16 @@ class Header extends Component {
 
     return (
       <div className="site-header">
-        <Modal show={this.state.visible} modalClosed={this.modalClosing} >
+        {this.state.visible ? <Modal show={this.state.visible} modalClosed={this.modalClosing} >
           <ContactForm show={this.state.visible} modalClosed={this.modalClosing} />
-        </Modal>
+        </Modal> : null}
         <div className="site-header-wrapper">
           <header className="main-header d-none d-sm-none d-md-none d-lg-flex">
             <Logo />
             <Nav />
             <CTA action={this.state.action} modal={this.modalHandler} />
           </header>
-          <MobileMenu show={this.state.show} toggle={this.toggleMenu} />
+          <MobileMenu show={this.state.show} toggle={this.toggleMenu} modal={this.modalHandler} />
         </div>
         <BreakpointProvider>
           <StickyHeader show={this.state.show} toggle={this.toggleMenu} modal={this.modalHandler} />

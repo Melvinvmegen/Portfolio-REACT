@@ -20,9 +20,9 @@ const MobileMenu = (props) => {
                 <MenuToggle toggle={props.toggle} />
               </div>
               <BreakpointProvider>
-                <Nav />
+                <Nav toggle={props.toggle} />
                 <div className="hire-me-mobile">
-                  <HireMe />
+                  <HireMe modal={props.modal} id="hire-me" />
                 </div>
               </BreakpointProvider>
             </div> : null
