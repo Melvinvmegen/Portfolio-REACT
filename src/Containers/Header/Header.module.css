@@ -59,7 +59,7 @@
   width: 100%;
   transition: top 0.3s;
   background: white;
-  z-index: 2;
+  z-index: 5;
   border-bottom: 1px solid #eee;
   top: 0;
 }

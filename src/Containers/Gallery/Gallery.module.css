@@ -264,13 +264,9 @@
     margin-top: 30px;
   }
 
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: -54% !important;
-  }
-
-  .carousel-control-prev {
-    left: 0 !important;
+  .fa-chevron-right {
+    position: absolute !important;
+    left: 65% !important;
   }
 
   .carousel-inner {

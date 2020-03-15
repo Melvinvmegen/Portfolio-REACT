@@ -4,6 +4,7 @@ import RoyalBrinkman from './royalbrinkman.png'
 import Mindseed from './mindseed.png'
 import Goboat from './goboat.jpg'
 import ThomasKrief from './thomaskrief.png'
+import SecuriGard from './Securigard.png'
 import CarouselImage from "./CarouselImage/CarouselImage";
 import ButtonProject from "../../Components/ButtonProject/ButtonProject";
 import CarouselContent from "./CarouselContent/CarouselContent";
@@ -17,18 +18,21 @@ class Gallery extends Component {
       { img: Goboat, alt: "Goboat", href: "https://goboat.herokuapp.com/" },
       { img: Mindseed, alt: "Mindseed", href: "https://www.mindseed.app/" },
       { img: ThomasKrief, alt: "ThomasKrief", href: "http://www.thomaskrief.fr/" },
+      { img: SecuriGard, alt: "Securigard", href: "https://serene-falls-79228.herokuapp.com/" },
     ],
     content: [
       { title: "ROYAL BRINKMAN", desc: "La boutique de devis en ligne pour l'horticulture professionnelle. Où vous pouvez trouver produits, connaissances et conseils personnalisés liés à l'horticulture. Projet de deux ans en tant que responsable de la transition digitale. Mes deux années de contribution ont une meilleure présence digitale avec une boutique en ligne professionnelle." },
       { title: "GOBOAT", desc: "Projet de 5 jours réalisé au cours du Bootcamp proposé par la formation de développeur web Full-Stack, le Wagon. Avec comme repère Airbnb nous avons créé une plateforme de location de bateau. Email : admin@gmail.com, Password : password " },
       { title: "MINDSEED", desc: "Projet de deux semaines réalisé au cours du Bootcamp proposé par la formation de développeur web Full-Stack, le Wagon. Nous avons créé un site d'aide à l'apprentissage avec un système de flashcards poussé. Celui-ci est à destination des étudiants, professeurs ou simple curieux avare d'apprentissage. Email : melvin@gmail.com, Password : password" },
       { title: "THOMAS KRIEF", desc: "Projet de création d'un site vitrine pour l'ancien skieur professionnel et nouvel artiste : Thomas Krief. L'objectif rechercher, mettre en avant ses dernières créations et inviter les visiteurs à se diriger vers son Instagram pour en savoir plus." },
+      { title: "SECURIGARD", desc: "Projet de création d'une application de gestion de base de données clients avec partage de documents entre administrateurs et utilisateurs, création dynamique de contrats (format pdf) et distribution et remplissage d'enquête clients" },
     ],
     href: [
       { href: "https://royalbrinkman.fr/" },
       { href: "https://goboat.herokuapp.com/" },
       { href: "https://www.mindseed.app/" },
       { href: "http://www.thomaskrief.fr/" },
+      { href: "https://serene-falls-79228.herokuapp.com/" },
     ],
     tagsRB: [
       { id: 1, name: "HTML5" },
@@ -41,7 +45,7 @@ class Gallery extends Component {
       { id: 2, name: "CSS3" },
       { id: 3, name: "Javascript" },
       { id: 6, name: "Ruby" },
-      { id: 7, name: "Rails" },
+      { id: 7, name: "Ruby on Rails" },
       { id: 9, name: "Heroku" },
     ],
     tagsMS: [
@@ -49,7 +53,7 @@ class Gallery extends Component {
       { id: 2, name: "CSS3" },
       { id: 3, name: "Javascript" },
       { id: 6, name: "Ruby" },
-      { id: 7, name: "Rails" },
+      { id: 7, name: "Ruby on Rails" },
       { id: 9, name: "Heroku" },
     ],
     tagsTK: [
@@ -58,6 +62,15 @@ class Gallery extends Component {
       { id: 3, name: "Javascript" },
       { id: 4, name: "React.js" },
       { id: 5, name: "Heroku" },
+    ],
+    tagsSG: [
+      { id: 1, name: "HTML5" },
+      { id: 2, name: "CSS3" },
+      { id: 3, name: "Javascript" },
+      { id: 4, name: "Ruby" },
+      { id: 5, name: "Ruby on Rails" },
+      { id: 5, name: "PostGreSQL" },
+      { id: 6, name: "Heroku" },
     ],
     btnText: "Se rendre sur le site",
     nextIcon: <span aria-hidden="true" className="fa fa-chevron-right" />,
@@ -106,6 +119,14 @@ class Gallery extends Component {
                     <CarouselContent title={this.state.content[3].title} desc={this.state.content[3].desc} />
                     <Tag tags={this.state.tagsTK} />
                     <ButtonProject text={this.state.btnText} href={this.state.href[3].href} />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
+                  <CarouselImage img={this.state.images[4].img} alt={this.state.images[4].alt} href={this.state.images[4].href} />
+                  <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <CarouselContent title={this.state.content[4].title} desc={this.state.content[4].desc} />
+                    <Tag tags={this.state.tagsTK} />
+                    <ButtonProject text={this.state.btnText} href={this.state.href[4].href} />
                   </div>
                 </Carousel.Item>
               </Carousel>
