@@ -54,7 +54,6 @@
 
 .carousel-indicators {
   margin-left: 50% !important;
-  top: 75%;
 }
 
 .gallery-right {
@@ -210,11 +209,15 @@
 }
 
 .carousel-indicators li {
-  background-color: #d8dcee !important;
+  background-color: #a2a2a2 !important;
 }
 
 .carousel-indicators .active {
-  background-color: #82848e;
+  background-color: #ffffff !important;
+}
+
+#Gallerymgen .carousel-control-next {
+  right: -3%;
 }
 
 @media (max-width: 1025px) {

@@ -23,9 +23,9 @@ class Gallery extends Component {
     content: [
       { title: "ROYAL BRINKMAN", desc: "La boutique de devis en ligne pour l'horticulture professionnelle. Où vous pouvez trouver produits, connaissances et conseils personnalisés liés à l'horticulture. Projet de deux ans en tant que responsable de la transition digitale. Mes deux années de contribution ont une meilleure présence digitale avec une boutique en ligne professionnelle." },
       { title: "GOBOAT", desc: "Projet de 5 jours réalisé au cours du Bootcamp proposé par la formation de développeur web Full-Stack, le Wagon. Avec comme repère Airbnb nous avons créé une plateforme de location de bateau. Email : admin@gmail.com, Password : password " },
-      { title: "MINDSEED", desc: "Projet de deux semaines réalisé au cours du Bootcamp proposé par la formation de développeur web Full-Stack, le Wagon. Nous avons créé un site d'aide à l'apprentissage avec un système de flashcards poussé. Celui-ci est à destination des étudiants, professeurs ou simple curieux avare d'apprentissage. Email : melvin@gmail.com, Password : password" },
-      { title: "THOMAS KRIEF", desc: "Projet de création d'un site vitrine pour l'ancien skieur professionnel et nouvel artiste : Thomas Krief. L'objectif rechercher, mettre en avant ses dernières créations et inviter les visiteurs à se diriger vers son Instagram pour en savoir plus." },
-      { title: "SECURIGARD", desc: "Projet de création d'une application de gestion de base de données clients avec partage de documents entre administrateurs et utilisateurs, création dynamique de contrats (format pdf) et distribution et remplissage d'enquête clients" },
+      { title: "MINDSEED", desc: "Projet de deux semaines réalisé au cours du Bootcamp proposé par la formation de développeur web Full-Stack, le Wagon. Nous avons créé un site d'aide à l'apprentissage avec un système de flashcards poussé. Celui-ci est à destination des étudiants, professeurs ou simple curieux avare d'apprentissage." },
+      { title: "THOMAS KRIEF", desc: "Projet de création d'un site vitrine pour l'ancien skieur professionnel et nouvel artiste : Thomas Krief. L'objectif rechercher, mettre en avant ses dernières créations et inviter les visiteurs à se rediriger vers son compte Artmajeur pour acceder à toute sa collection." },
+      { title: "SECURIGARD", desc: "Projet de création d'une application Web de gestion de base de données clients avec partage de documents sécurisés entre administrateurs et utilisateurs, création dynamique de contrats (format pdf) et distribution et remplissage d'enquête clients." },
     ],
     href: [
       { href: "https://royalbrinkman.fr/" },
@@ -88,7 +88,7 @@ class Gallery extends Component {
                 <h2 className="title-bold align-center">MES PROJETS</h2>
                 <h3 className="featured-item-subheader italic align-center">Découvrez un exemple concret de tout ce qui précède</h3>
               </div>
-              <Carousel className="gallery-content" interval="1000000" nextIcon={this.state.nextIcon} prevIcon={this.state.prevIcon} >
+              <Carousel className="gallery-content" id="Gallerymgen" interval="1000000" nextIcon={this.state.nextIcon} prevIcon={this.state.prevIcon} >
                 <Carousel.Item className="myslides fade-slide" data-aos="fade-up">
                   <CarouselImage img={this.state.images[0].img} alt={this.state.images[0].alt} href={this.state.images[0].href} />
                   <div className="gallery-left col-xs-12 col-sm-12 col-md-12 col-lg-4">

@@ -188,11 +188,9 @@
 
 .nav-anim .line.-bottom {
   bottom: -3px;
-  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
 
-.nav-anim a :hover .text,
 .nav-anim a :active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
