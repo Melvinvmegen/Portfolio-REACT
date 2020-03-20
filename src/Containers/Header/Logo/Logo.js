@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import classes from './Logo.module.css'
+import logo from './LOGO.svg'
 
-const Logo = () => {
+const Logo = (props) => {
   return (
-    <div className="main-header-left">
-      <h1><a href="/">MVM</a></h1>
-    </div>
+    <Fragment className="main-header-left">
+      <img src={props.logo ? props.logo : logo} alt="" className={classes.Logo} />
+    </Fragment>
   )
 }
 

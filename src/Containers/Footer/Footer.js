@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import SocialLinks from "../../Components/SocialLinks/SocialLinks";
 import Newsletter from "../../Components/Newsletter/Newsletter";
 import FooterNav from './FooterNav/FooterNav'
+import Logo from '../Header/Logo/Logo'
+import logo from "./logo blanc.svg"
 
 class Footer extends Component {
   state = {
@@ -51,7 +53,7 @@ class Footer extends Component {
             <div className="footer-header">
               <div className="footer-header-inner">
                 <div className="footer-header-inner-left">
-                  <h1 className="logo_footer"><a href="/">MVM</a></h1>
+                  <Logo logo={logo} />
                 </div>
                 <div className="footer-header-inner-right">
                   <SocialLinks links={this.state.socialLinks} />
