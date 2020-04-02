@@ -26,6 +26,7 @@
   width: 100%;
   min-height: 100px;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .footer-header-inner-left {
@@ -77,7 +78,7 @@
 
 .social-links .icon {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 25px;
   width: 70px;
   text-decoration: none;
   color: white !important;

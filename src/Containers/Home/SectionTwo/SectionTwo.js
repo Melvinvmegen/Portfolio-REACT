@@ -4,7 +4,7 @@ import ButtonProject from '../../../Components/ButtonProject/ButtonProject';
 import Polygons from '../../../Components/Polygons/Polygons';
 import PostGreSQL from "./PostGreSQL.png"
 import Rails from "./Rails.png"
-import Ruby from "./Ruby.png"
+import Ruby from "./RUBY.png"
 
 
 class SectionTwo extends Component {

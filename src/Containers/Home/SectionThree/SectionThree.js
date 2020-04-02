@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import BlaBla from '../../../Components/BlaBLa/BlaBla'
 import ButtonProject from '../../../Components/ButtonProject/ButtonProject';
 import Polygons from '../../../Components/Polygons/Polygons';
+import Mailchimp from './MailC.jpg'
+
 
 class SectionThree extends Component {
   state = {
@@ -10,9 +12,9 @@ class SectionThree extends Component {
       id: 1, title: 'MARKETEUR DIGITAL', subtitle: 'Bachelor, spécialisation Marketing', text: "Etudes réalisées à Kedge Business School ou j'ai eu la chance de développer mes compétences numériques à travers de nombreux stages et expériences. J'ai également passé 2 ans en tant que responsable de la transition digitale pour le marché français au sein de l'entreprise, Royal Brinkman. Au cours de cette expérience j'ai appris à maîtriser différents outils tels que Mailchimp, Unbounce, Hotjar, Google Analytics, ahrefs ainsi que Joomla."
     },
     inputs: [
-      { id: 1, alt: 'MailChimp', img: 'https://www.dexigner.com/images/news/xxi/31385.jpg' },
-      { id: 2, alt: 'Ahrefs', img: 'https://cdn.ahrefs.com/images/mediakit/logo_monochrome@2x.png' },
-      { id: 3, alt: 'AdWords', img: 'https://3x5yp62s8loz3jw8273enqos16xh-wpengine.netdna-ssl.com/wp-content/uploads/icon360-Analytics.png' }
+      { id: 1, alt: 'MailChimp', img: Mailchimp },
+      { id: 2, alt: 'Ahrefs', img: "https://3x5yp62s8loz3jw8273enqos16xh-wpengine.netdna-ssl.com/wp-content/uploads/icon360-Analytics.png" },
+      { id: 3, alt: 'AdWords', img: "https://www.pngitem.com/pimgs/m/242-2422855_transparent-google-adwords-logo-png-google-adwords-logo.png" }
     ],
     btnText: "Découvrez mes projets",
     href: "#Mes-Projets"

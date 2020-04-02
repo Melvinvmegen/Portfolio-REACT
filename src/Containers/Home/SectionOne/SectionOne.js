@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import BlaBla from '../../../Components/BlaBLa/BlaBla'
 import ButtonProject from '../../../Components/ButtonProject/ButtonProject';
 import Polygons from '../../../Components/Polygons/Polygons';
+import JS from './JS.png'
+import CSS from './CSS.png'
 
 class SectionOne extends Component {
   state = {
@@ -10,9 +12,9 @@ class SectionOne extends Component {
       id: 1, title: 'DEVELOPPEUR FRONT-END', subtitle: 'React.js, Freelance', text: "Grâce à mon expérience professionnelle, j'ai pu suivre de multiples cours sur les languages suivants : HTML, CSS, Javascript. Et ainsi étendre mes compétences digitale. Certifié du Wagon après deux mois de bootcamp, j'ai décider d'étendre mes compétences en Javascript. Language à l'aide duquel je me spécialise dans le front-end avec pour framework : React.js."
     },
     inputs: [
-      { id: 1, alt: 'Javascript', img: 'https://icn.lycee-valin.fr/projets2018/seconde14/eleve12/images/javascript.png' },
-      { id: 2, alt: 'React', img: 'https://oneteamsolutions.in/images/upload/post-33.png' },
-      { id: 3, alt: 'CSS3', img: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' }
+      { id: 1, alt: 'Javascript', img: JS },
+      { id: 2, alt: 'React', img: "https://oneteamsolutions.in/images/upload/post-33.png" },
+      { id: 3, alt: 'CSS3', img: CSS }
     ],
     btnText: "Découvrez mes projets",
     href: "#Mes-Projets"
